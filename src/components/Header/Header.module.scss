@@ -1,0 +1,50 @@
+.header {
+  padding: 30px 30px 10px;
+  border-bottom: 1px solid #bbbbbb;
+
+  .headerTitle {
+    margin-bottom: 50px;
+  }
+
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.datePickers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  & .picker {
+    margin: 0 10px;
+  }
+}
+
+.error {
+  color: red;
+  padding: 0 20px;
+}
+
+.actions {
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  button + button {
+    margin-left: 10px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+
+    &--inactive {
+      filter: opacity(0.5);
+    }
+  }
+}
